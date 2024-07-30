@@ -195,14 +195,17 @@ var typewriter = new Typewriter(app, {
   cursor: "_",
 });
 
-// typewriter
-//   .pauseFor(2500)
-//   .typeString("A simple yet powerful native javascript")
-//   .pauseFor(300)
-//   .deleteChars(10)
-//   .typeString("<strong>JS</strong> plugin for a cool typewriter effect and ")
-//   .typeString(
-//     '<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>'
-//   )
-//   .pauseFor(1000)
-//   .start();
+function emailSend() {
+  let formById = document.querySelector("#myForm");
+  emailjs.sendForm("service_wxgfa08", "template_j0butlq", formById).then(
+    (response) => {
+      console.log("SUCCESS!", response.status, response.text);
+      swal("Successful!", "Your message has been recieved!", "success");
+      document.querySelector("form").reset();
+    },
+    (error) => {
+      console.log("FAILED...", error);
+      swal("Failed", "There was in issue sending the email", "error");
+    }
+  );
+}

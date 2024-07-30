@@ -41,8 +41,9 @@
             <h1>Faisal Bhuiyan</h1>
             <p id="endlessTyping">An aspiring developer...</p>
             <br>
-            <span class="small-icon icon brands fa-github"></span>
-            <span class="small-icon icon brands fa-linkedin"></span>
+            <a href="https://github.com/faisalbhuiyan3038"><span class="small-icon icon brands fa-github"></span></a>
+            <a href="https://linkedin.com/in/faisalbhuiyan3038"><span class="small-icon icon brands fa-linkedin"></span></a>
+            <a href="mailto:faisalbhuiyan3038@gmail.com"><span class="small-icon icon solid fa-envelope"></span></a>
           </header>
           <a href="#project" class="jumplink pic">
             <span class="arrow icon solid fa-chevron-right"
@@ -205,27 +206,28 @@
           <header>
             <h2>Contact Me</h2>
           </header>
-          <form action="mailto:faisalbhuiyan3038@gmail.com" method="post" enctype="text/plain">
+          <form id="myForm">
             <div>
               <div class="row">
                 <div class="col-6 col-12-medium">
-                  <input type="text" name="name" placeholder="Name" />
+                  <input type="text" id="name" name="name" placeholder="Name" />
                 </div>
                 <div class="col-6 col-12-medium">
-                  <input type="text" name="email" placeholder="Email" />
+                  <input type="text" id="email" name="email" placeholder="Email" />
                 </div>
                 <div class="col-12">
-                  <input type="text" name="subject" placeholder="Subject" />
+                  <input type="text" id="subject" name="subject" placeholder="Subject" />
                 </div>
                 <div class="col-12">
                   <textarea
                     name="message"
+                    id="message"
                     placeholder="Message"
                     rows="6"
                   ></textarea>
                 </div>
                 <div class="col-12">
-                  <input type="submit" value="Send Message" />
+                  <input type="submit" onclick="emailSend()" value="Send Message" />
                 </div>
               </div>
             </div>
@@ -244,6 +246,17 @@
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "1eNa75WU08QQbfN4b",
+      });
+   })();
+</script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
