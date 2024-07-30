@@ -2261,3 +2261,50 @@ input, select, textarea {
 			-webkit-filter: grayscale(100%) blur(3px);
 			filter: grayscale(100%) blur(3px);
 		  }
+
+		  .btn {
+			border: 2px solid black;
+			background-color: rgba(255, 255, 255, 0.507);
+			color: black;
+			padding: 14px 28px;
+			font-size: 16px;
+			cursor: pointer;
+		  }
+
+		  .success {
+			border-color: #04AA6D;
+			color: green;
+		  }
+
+		  .success:hover {
+			background-color: #04AA6D;
+			color: white;
+		  }
+
+		  .info {
+			border-color: #2196F3;
+			color: dodgerblue
+		  }
+
+		  .info:hover {
+			background: #2196F3;
+			color: white;
+		  }
+
+		  .link-style a{
+			text-decoration: solid;
+			color: #673e3b;
+		  }
+
+		  .link-style a:hover{
+			color: #04AA6D;
+		  }
+
+		  .small-icon{
+			margin-inline: 0.4em;
+		  }
+
+		  .small-icon:hover{
+			color:#04AA6D;
+			cursor: pointer;
+		  }
