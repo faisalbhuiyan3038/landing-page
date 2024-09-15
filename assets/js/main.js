@@ -1,8 +1,18 @@
 /*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Astral by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+fetch('https://raw.githubusercontent.com/faisalbhuiyan3038/latest-activity/refs/heads/main/readme.md')
+  .then(response => response.text())
+  .then(markdown => {
+    // Convert markdown to HTML
+    const htmlContent = marked.parse(markdown);
+    // Insert the HTML into the page
+    document.getElementById('readme-content').innerHTML = htmlContent;
+    document.getElementById("readme-content").classList.add("noNumbers");
+  })
+  .catch(error => console.error('Error fetching README:', error));
 
 (function ($) {
   var $window = $(window),

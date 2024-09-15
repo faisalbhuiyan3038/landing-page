@@ -12,22 +12,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
 <!-- Google tag (gtag.js) -->
@@ -53,12 +53,14 @@
     <div id="wrapper">
       <!-- Nav -->
       <nav id="nav">
+
         <a href="#" class="icon solid fa-home"><span>Home</span></a>
+        <a href="#activity" class="icon solid fa-chart-line"
+          ><span>Activity</span></a
+        >
         <a href="#myStory" class="icon solid fa-pen"><span>My Story</span></a>
         <a href="#project" class="icon solid fa-code"><span>Project</span></a>
-        <a href="#contact" class="icon solid fa-envelope"
-          ><span>Contact</span></a
-        >
+
       </nav>
 
       <!-- Main -->
@@ -72,6 +74,8 @@
             <a href="https://github.com/faisalbhuiyan3038"><span class="small-icon icon brands fa-github"></span></a>
             <a href="https://linkedin.com/in/faisalbhuiyan3038"><span class="small-icon icon brands fa-linkedin"></span></a>
             <a href="mailto:faisalbhuiyan3038@gmail.com"><span class="small-icon icon solid fa-envelope"></span></a>
+            <br>
+            <a class="clickableLink" href="#activity"><p>See Latest Github Activity...</p></a>
           </header>
           <a href="#project" class="jumplink pic">
             <span class="arrow icon solid fa-chevron-right"
@@ -80,6 +84,18 @@
             <img src="images/smiling.jpg" alt="" />
           </a>
         </article>
+
+        <!-- Activity -->
+        <article id="activity" class="panel">
+          <header>
+            <h2>My Github Activity</h2>
+          </header>
+          <div id="readme-content"></div>
+          <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=faisalbhuiyan3038" alt="GitHub Streak" /></a>
+          <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=faisalbhuiyan3038&layout=compact'/>
+        </article>
+
+
 
         <!-- My Story -->
         <article id="myStory" class="panel link-style">
@@ -188,6 +204,7 @@
           </header>
           <section>
             <div class="row">
+
               <div class="col-12 col-6-medium col-12-small">
                 <div class="image-wrapper">
                   <a href="#" class="image fit"
@@ -199,6 +216,7 @@
                 </div>
                 </div>
               </div>
+
               <div class="col-12 col-6-medium col-12-small">
                 <div class="image-wrapper">
                   <a href="#" class="image fit"
@@ -225,42 +243,23 @@
                 </div>
 
               </div>
+              <div class="col-12 col-6-medium col-12-small">
+                <div class="image-wrapper">
+                  <a href="#" class="image fit"
+                  ><img src="images/firefox_link_collections.gif" alt="firefox_link_collections" /></a>
+                <div class="content">
+                  <p>An HTML, Javascript Link Manager</p>
+                  <a href="https://github.com/faisalbhuiyan3038/save-tab-collections"><button class="btn success">Github</button></a>
+                  <a href="https://addons.mozilla.org/en-US/firefox/addon/link-collection-manager/"><button class="btn info">Firefox Addons</button></a>
+                </div>
+                </div>
+
+              </div>
             </div>
           </section>
         </article>
 
-        <!-- Contact -->
-        <article id="contact" class="panel">
-          <header>
-            <h2>Contact Me</h2>
-          </header>
-          <form id="myForm">
-            <div>
-              <div class="row">
-                <div class="col-6 col-12-medium">
-                  <input type="text" id="name" name="name" placeholder="Name" />
-                </div>
-                <div class="col-6 col-12-medium">
-                  <input type="text" id="email" name="email" placeholder="Email" />
-                </div>
-                <div class="col-12">
-                  <input type="text" id="subject" name="subject" placeholder="Subject" />
-                </div>
-                <div class="col-12">
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                    rows="6"
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <input type="submit" onclick="emailSend()" value="Send Message" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </article>
+
       </div>
 
       <!-- Footer -->
@@ -276,6 +275,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
