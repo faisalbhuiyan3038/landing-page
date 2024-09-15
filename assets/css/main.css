@@ -2327,6 +2327,17 @@ body.is-preload #wrapper {
 	width: 100%;
 }
 
+.image-wrapper2 {
+	position: relative;
+	width: 100%;
+}
+
+.image-wrapper2 img {
+	width: 100%;
+	height: auto;
+}
+
+
 .image-wrapper img {
 	width: 100%;
 	height: auto;
